@@ -513,6 +513,7 @@ svg:hover path {
 /* Technologies and frameworks used start */
 .i__use {
   width: 100%;
+  margin: 3px 0px
 }
 
 .i__use > p {
