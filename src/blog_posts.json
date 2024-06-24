@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Google-Op Neeva Is Shutting Down",
+    "date": "2023-05-02",
+    "description": "Neeva, one of google's biggest competitors is shutting down",
+    "image": "../src/assets/images/neeva.JPG",
+    "contentURL": "/blogpost1.html"
+  },
+  {
+    "id": 2,
+    "title": "AI Pioneers: The Race for Dominance in the Search Industry's Next Frontier",
+    "date": "2023-05-02",
+    "description": "The rise of generative AI models has impacted internet search.",
+    "image": "..",
+    "contentURL": "/blogpost2.html"
+  },
+  {
+    "id": 3,
+    "title": "Elon Musky",
+    "date": "2023-05-02",
+    "description": "This is a short description of blog post 3. Read more about this interesting topic. Because there is no reason for this snippet to be long",
+    "image": "https://via.placeholder.com/300x200",
+    "contentURL": "/blogpost3.html"
+  }
+]

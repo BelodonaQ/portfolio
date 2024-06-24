@@ -1,0 +1,120 @@
+body {
+  background-color: rgb(19, 15, 32) !important;
+  
+}
+
+h3 {
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 1.5rem;
+
+}
+
+h5 {
+  color: rgb(111, 111, 111);
+}
+
+h6 {
+  color: #fff;
+  font-size: 1.75rem;
+}
+
+img {
+  border-top: 2px solid #b7702d;
+  border-bottom: 2px solid #b7702d;
+  width: 80%;
+  height: 30vh;
+  display: block;
+  background-size: cover;
+  margin: 0 auto;
+
+}
+
+.Post-image {
+  margin: 0 auto;
+}
+
+p {
+  color: #fff;
+  font-size: 1.25rem;
+  padding: 0px 15px;
+  padding-top: 1.15rem;
+}
+
+h5 {
+  display: block;
+  text-align: center;
+}
+
+.top_bottom {
+  margin: 3rem auto;
+  background-size: cover;
+}
+
+.contact__rings {
+  border: none;
+}
+
+
+.border {
+ 
+  padding-bottom:50px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1px solid #fff;
+}
+
+#contact {
+  border-top: 1px solid #b7702d;
+}
+
+@media (max-width: 768px) {
+  .Post-title {
+    font-size: 24px;
+  }
+
+   h6 {
+    font-size: 20px;
+    text-align: center;
+   } 
+
+  .Post-paragraph {
+    font-size: 16px;
+  }
+
+  img {
+    margin: 0 auto;
+  }
+}
+
+
+@media (min-width:600px) {
+  img {
+    width: 50vw;
+    height: 40vh;
+    display: block;
+    margin: 0 auto;
+    max-width: 65vw;
+    max-height: 45vh;
+
+  }
+
+  .golden-date {
+    display: block;
+    
+  }
+
+  h6 {
+    padding-left: 3rem;
+  }
+
+  p {
+    font-size: 1.45rem;
+    padding: 0px 4rem;
+  }
+}

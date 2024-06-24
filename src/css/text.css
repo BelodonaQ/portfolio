@@ -1,0 +1,105 @@
+ @property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+} 
+
+:root {
+  --gradient-angle: 0deg;
+  --clr-1: hsl(7, 100%, 68%);
+  --clr-2: rgb(33, 93, 110);
+  --clr-3: #b7702d;
+  --clr-4: hsl(254, 20%, 44%);
+  --clr-5: hsl(258, 100%, 95%);
+}
+
+body {
+  background-color: rgb(24, 18, 43);
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50vh;
+  /* margin: 25px 0px; */
+  aspect-ratio: 1/1.5;
+  border-radius: 0.5rem;
+  background-color: rgb(19, 15, 32);
+  position: relative;
+  margin: 2rem 10px;
+  padding-bottom: 2rem;
+  
+}
+
+@media screen and (max-width:600px){
+  .card h3 {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    height: 65vh;
+  }
+
+  .card h3, .card p {
+    padding-left: 5px;
+  }
+}
+
+
+
+.card::before,
+.card::after {
+  position: absolute;
+  content: "";
+  inset: -.5rem;
+  border-radius: inherit;
+  animation: rotation 12s linear infinite;
+  z-index: -1;
+  transform: translate3d(0, 0, 0); /* Apply 3D transform for hardware acceleration */
+}
+
+.card::before {
+  background: var(--clr-3);
+  background: conic-gradient( from var(--gradient-angle), var(--clr-3), var(--clr-4), var(--clr-5), var(--clr-4), var(--clr-3));
+}
+
+.card::after {
+  background: conic-gradient(from var(--gradient-angle), var(--clr-4), var(--clr-5), var(--clr-4), var(--clr-3));
+  filter: blur(0.9rem);
+  background: -webkit-linear-gradient(var(--gradient-angle), var(--clr-3), var(--clr-4), var(--clr-5), var(--clr-4), var(--clr-3));
+}
+
+.card.in-view::before,
+.card.in-view::after {
+  animation: rotation 12s linear infinite;
+}
+
+@media screen and (min-width:600px) {
+  .card {
+    height: 70vh;
+  }
+
+  
+}
+
+@keyframes rotation {
+  0% {
+    --gradient-angle: 0deg;
+  }
+  100% {
+    --gradient-angle: 360deg;
+  }
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    --gradient-angle: 0deg;
+  }
+  100% {
+    --gradient-angle: 360deg;
+  }
+}
