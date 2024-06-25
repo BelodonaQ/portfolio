@@ -14,17 +14,17 @@ function throttle(func, delay) {
 
 const image = document.getElementById("myImage");
 const desktopImage = {
-  src: "src/assets/images/portfolio_img.png", // Ensure the path is correct
+  src: "src/assets/images/C90B66C5-F441-485F-B8C7-BC05D5D65BBA_1_105_c.jpeg", // Ensure the path is correct
   width: 445,
   height: 720
 };
 const tabletImage = {
-  src: "src/assets/images/portfolio_img.png", // Ensure the path is correct
+  src: "src/assets/images/C90B66C5-F441-485F-B8C7-BC05D5D65BBA_1_105_c.jpeg", // Ensure the path is correct
   width: 323,
   height: 600
 };
 const mobileImage = {
-  src: "src/assets/images/portfolio_img.png", // Ensure the path is correct
+  src: "src/assets/images/C90B66C5-F441-485F-B8C7-BC05D5D65BBA_1_105_c.jpeg", // Ensure the path is correct
   width: 174,
   height: 290
 };
