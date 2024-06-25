@@ -13,48 +13,46 @@ function throttle(func, delay) {
 
 const image = document.getElementById("myImage");
 const desktopImage = {
-  src: "/src/assets/images/portfolio_img.PNG",
+  src: "src/assets/images/portfolio_img.PNG", // Ensure the path is correct
   width: 445,
   height: 720
-}
+};
 const tabletImage = {
-  src: "/src/assets/images/portfolio_img.PNG",
+  src: "src/assets/images/portfolio_img.PNG", // Ensure the path is correct
   width: 323,
   height: 600
-}
-
+};
 const mobileImage = {
-  src: "/src/assets/images/portfolio_img.PNG",
+  src: "src/assets/images/portfolio_img.PNG", // Ensure the path is correct
   width: 174,
   height: 290
-}
-  
+};
+
 function setImage() {
   const viewportWidth = window.innerWidth;
   if (viewportWidth >= 1000) {
-      image.src = desktopImage.src;
-      image.width = desktopImage.width;
-      image.height = desktopImage.height;
+    image.src = desktopImage.src;
+    image.width = desktopImage.width;
+    image.height = desktopImage.height;
   } else if (viewportWidth >= 630) {
-      image.src = tabletImage.src;
-      image.width = tabletImage.width;
-      image.height = tabletImage.height;
+    image.src = tabletImage.src;
+    image.width = tabletImage.width;
+    image.height = tabletImage.height;
   } else {
-      image.src = mobileImage.src;
-      image.width = mobileImage.width;
-      image.height = mobileImage.height;
+    image.src = mobileImage.src;
+    image.width = mobileImage.width;
+    image.height = mobileImage.height;
   }
-  
-  // Add the opacity to your image
+
+  // Add styles to the image
   image.style.opacity = '0.9';
-
-  image.style.filter = 'grayscale(100%)'
-
+  image.style.filter = 'grayscale(100%)';
   image.style.animation = 'fadeIn 2s ease';
 }
 
 setImage();
 window.addEventListener("resize", setImage);
+
 
 
 
