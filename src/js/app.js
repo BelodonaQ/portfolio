@@ -13,17 +13,17 @@ function throttle(func, delay) {
 
 const image = document.getElementById("myImage");
 const desktopImage = {
-  src: "src/assets/images/portfolio_img.PNG", // Ensure the path is correct
+  src: "src/assets/images/portfolio_img.png", // Ensure the path is correct
   width: 445,
   height: 720
 };
 const tabletImage = {
-  src: "src/assets/images/portfolio_img.PNG", // Ensure the path is correct
+  src: "src/assets/images/portfolio_img.png", // Ensure the path is correct
   width: 323,
   height: 600
 };
 const mobileImage = {
-  src: "src/assets/images/portfolio_img.PNG", // Ensure the path is correct
+  src: "src/assets/images/portfolio_img.png", // Ensure the path is correct
   width: 174,
   height: 290
 };
